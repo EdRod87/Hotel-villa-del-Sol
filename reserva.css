@@ -242,3 +242,23 @@ select option {
 .btn-form:hover {
   background-color: #333;
 }
+
+.tm-footer{
+  background: #ffdc52;
+ display: block;
+ padding: 20px;
+ position: relative;
+
+}
+.Nosotros{
+display: inline-table;
+max-width: 30%;
+width: 30%;
+margin: 2% 0 2% 4%
+}
+.Contacto {
+display: inline-table;
+max-width: 30%;
+width: 30%;
+margin: 2% 0 2% 25%
+}

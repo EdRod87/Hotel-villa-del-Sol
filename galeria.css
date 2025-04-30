@@ -249,3 +249,23 @@
         margin-top: 50px;
         font-size: 14px; 
     }
+    
+    .tm-footer{
+      background: #e6bb11;
+     display: block;
+     padding: 20px;
+     position: relative;
+ 
+ }
+ .Nosotros{
+  display: inline-table;
+  max-width: 30%;
+  width: 30%;
+  margin: 2% 0 2% 4%
+}
+.Contacto {
+  display: inline-table;
+  max-width: 30%;
+  width: 30%;
+   margin: 2% 0 2% 25%
+}

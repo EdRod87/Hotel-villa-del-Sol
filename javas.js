@@ -1,21 +1,25 @@
-let currentIndex = 0;
-
 const sliderList = document.getElementById('sliderList');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+let index = 0;
 const totalSlides = sliderList.children.length;
 
 function updateSlider() {
-    const offset = -currentIndex * 100;
-    sliderList.style.transform = `translateX(${offset}%)`;
+    sliderList.style.transform = `translateX(-${index * 100}%)`;
 }
 
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
     updateSlider();
 });
 
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides;
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
     updateSlider();
 });
+
+setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateSlider();
+}, 5000);
