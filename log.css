@@ -11,6 +11,11 @@ body {
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
+    background-image: url(imagenes/calle.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
 }
 
 .login-container {
@@ -21,11 +26,11 @@ body {
     max-width: 400px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border: 3px solid #ffcc00;
-    text-align: center;
+    text-align: center center ;
 }
 
 .login-container h2 {
-    color: #ffcc00;
+    color: #858275;
     margin-bottom: 20px;
     font-size: 2rem;
     letter-spacing: 1px;
@@ -66,7 +71,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #e6b800;
+    background-color: #777777;
 }
 
 p {

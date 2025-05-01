@@ -1,271 +1,130 @@
-.body-login {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
-    background-color: #f7f7f7;
-    color: #f9f2f2;
-    }
-    
-    .header {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* ENCABEZADO */
+  header {
+    background-color: #000;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    
-    .logo {
-    height: 50px;
-    }
-    
-    .nav a {
-    margin: 0 15px;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #f7c242;
+  }
+  
+  nav a {
+    margin-left: 15px;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
-    }
-    
-    .container {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-    }
-    
-    .room-details {
+  }
+  
+  nav a:hover {
+    color: #f7c242;
+  }
+  
+  .hero {
+    background-image: url('imagenes/cuarto\ grande.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .hero-overlay p {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .tm-expsection {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f7c242;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+  }
+  
+  .tm-exp1, .tm-exp2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center ;
     gap: 20px;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    
-    .room-image {
-    flex: 1 1 300px;
-    border-radius: 12px;
-    object-fit: cover;
-    }
-    
-    .room-info {
-    flex: 1 1 300px;
-    }
-    
-    .room-info h6 {
-    margin: 0;
-    font-size: 28px;
-    }
-    
-    .room-info h2 {
-    color: #27ae60;
-    }
-    
-    .btn-reservar {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    }
-    
-    .btn-reservar:hover {
-    background-color: #555;
-    }
-    
-    .selector-habitaciones {
-    margin-top: 40px;
-    }
-    
-    .legend {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    }
-    
-    .legend-item {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    }
-    
-    .legend-item.libre { background-color: #ccc; }
-    .legend-item.ocupado { background-color: #66ff99; }
-    .legend-item.reservado { background-color: #ffeb3b; }
-    .legend-item.fuera-servicio { background-color: #f44336; }
-    
-    .niveles {
-    margin-bottom: 20px;
-    }
-    
-    .niveles button {
-    margin-right: 10px;
-    padding: 8px 16px;
-    border: none;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    cursor: pointer;
-    }
-    
-    .niveles button:hover {
-    background-color: #ccc;
-    }
-    
-    .grid-habitaciones {
-    display: grid;
-    grid-template-columns: repeat(4, 80px);
-    grid-gap: 15px;
-    justify-content: center;
     margin-top: 20px;
-    }
-    
-    .habitacion {
-    width: 80px;
-    height: 80px;
+  }
+  
+  .tm-exp1 img, .tm-exp2 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 40% center center ;
     border-radius: 12px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: transform 0.2s;
-    }
-    
-    .habitacion:hover {
-    transform: scale(1.1);
-    }
-    
-    .habitacion.libre { background-color: #ccc; }
-    .habitacion.ocupado { background-color: #66ff99; }
-    .habitacion.reservado { background-color: #ffeb3b; }
-    .habitacion.fuera-servicio { background-color: #f44336; }
-
-    .gallery-container
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
-      
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #000;
-        padding: 15px 30px;
-        color: white;
-      }
-      
-      .header .logo {
-        font-weight: bold;
-        font-size: 22px;
-      }
-      
-      .nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 16px;
-        transition: color 0.3s;
-      }
-      
-      .nav a:hover {
-        color: #ffd700;
-      }
-      
-      .gallery-container {
-        padding: 50px 20px;
-        background: #f5f5f5;
-      }
-      
-      .title {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 36px;
-        color: #333;
-      }
-      
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      
-      .card {
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        overflow: hidden;
-        transition: transform 0.3s;
-      }
-      
-      .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-      
-      .card h3 {
-        padding: 15px 20px 5px;
-        font-size: 22px;
-      }
-      
-      .card p {
-        padding: 0 20px 15px;
-        font-size: 16px;
-        color: #555;
-      }
-      
-      .btn-reservar {
-        display: block;
-        width: calc(100% - 40px);
-        margin: 0 20px 20px;
-        text-align: center;
-        padding: 10px 0;
-        background: #000;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: background 0.3s;
-      }
-      
-      .btn-reservar:hover {
-        background: #ffd700;
-        color: black;
-      }
-      
-     
-      .footer {
-        background: #000;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 50px;
-        font-size: 14px; 
-    }
-    
-    .tm-footer{
-      background: #e6bb11;
-     display: block;
-     padding: 20px;
-     position: relative;
+    border: 4px solid #f7c242;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .tm-exp1 img:hover, .tm-exp2 img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* PIE DE PÁGINA */
  
- }
- .Nosotros{
-  display: inline-table;
-  max-width: 30%;
-  width: 30%;
-  margin: 2% 0 2% 4%
+  
+  
+  
+  .bold {
+    font-weight: bold;
+  }
+  footer {
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid #ffcc00;
+    color: #ffffff;
+    font-size: 0.9rem;
 }
-.Contacto {
-  display: inline-table;
-  max-width: 30%;
-  width: 30%;
-   margin: 2% 0 2% 25%
+.tm-footer{
+    background: #211f17;
+   display: block;
+   padding: 20px;
+   position: relative;
+
 }
