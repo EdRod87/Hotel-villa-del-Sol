@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generación de Reportes - Hotel Villa del Sol</title>
+  <link rel="stylesheet" href="reportes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>🌞 VILLA DEL SOL</h1>
+  <nav>
+    <a href="Inicio.html">Inicio</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Iniciar Sesión</a>
+    <a href="galeria.html">Galería</a>
+    <a href="habitaciones.html">Habitaciones</a>
+    <a href="historial.html">Historial</a>
+    <a href="reportes.html" class="active">Reportes</a>
+  </nav>
+</header>
+
+<main class="report-section">
+  <h2 class="section-title">📊 Generación de Reportes</h2>
+
+  <form class="form-reporte">
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" name="cliente" placeholder="Nombre del cliente">
+
+    <label for="tipo">Tipo de actividad:</label>
+    <select id="tipo" name="tipo">
+      <option value="">-- Seleccionar --</option>
+      <option value="entrada">Entrada</option>
+      <option value="salida">Salida</option>
+      <option value="limpieza">Limpieza</option>
+      <option value="otros">Otros</option>
+    </select>
+
+    <button type="submit">Generar Reporte</button>
+  </form>
+
+  <div class="resultado-reporte">
+    <p><strong>Resultado:</strong> Aquí se mostrará el reporte generado con los datos ingresados.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-section">
+    <p class="bold">Acerca de Nosotros:</p>
+    <p>Formamos parte de un Hotel que hace de tu estancia una experiencia cómoda y agradable, con diversos servicios gratuitos y de valor añadido.</p>
+  </div>
+
+  <div class="footer-section">
+    <p class="bold">Contacto:</p>
+    <p>Dirección: 3ra Avenida 2-25, San Pedro Sacatepéquez</p>
+    <p>Teléfono: 7760-8835</p>
+  </div>
+
+  <p>© 2025 Hotel Villa del Sol</p>
+</footer>
+
+</body>
+</html>

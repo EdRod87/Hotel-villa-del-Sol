@@ -1,95 +1,117 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Villa del Sol</title>
     <link rel="stylesheet" href="estilo.css">
+    <script defer src="javas.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>🌞 VILLA DEL SOL</h1>
-        <nav>
-            <a href="Inicio.html">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Registro</a>
-            <a href="login.html">Iniciar Sesión</a>
-            <a href="galeria.html">Galeria</a>
-        </nav>
-    </header>
+<header>
+    <h1>🌞 VILLA DEL SOL</h1>
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="galeria.html">Galería</a>
+        <a href="habitaciones.html">Habitaciones</a>
+        <a href="historial.html">Historial</a>
+        <a href="report.html">Reportes</a>
+    </nav>
+</header>
 
-    <section>
-        <h2>Descubre tu espacio</h2>
-        <p>Conoce acerca de nuestras instalaciones</p>
-        <img    src="Entrada hotel.jpg" alt="Imagen hotel" width="90%">
-    </section>
-
-    <section>
-        <h2>HOTEL VILLA DEL SOL</h2>
-        <p>Situado en San Pedro Sacatepéquez, San Marcos...</p>
-        <ul>
-            <li>🏠 Habitaciones privadas</li>
-            <li>🚿 Baños privados</li>
-            <li>💧 Ducha con agua caliente</li>
-            <li>🛎️ Recepción 24h</li>
-            <li>📺 Señal TV</li>
+<section class="slider-frame">
+    <div class="slider">
+        <ul id="sliderList">
+            <li><img src="imagenes/Entrada hotel.jpg" alt="Entrada del Hotel"></li>
+            <li><img src="imagenes/Entrada.jpg" alt="Entrada principal"></li>
+            <li><img src="imagenes/esquina.jpg" alt="Vista de la esquina"></li>
+            <li><img src="imagenes/vista.jpg" alt="Habitación"></li>
         </ul>
-    </section>
+        <button id="prev" class="btn">&#10094;</button>
+        <button id="next" class="btn">&#10095;</button>
+    </div>
+</section>
 
-    <section class="instalaciones">
-        <h3>Nuestras Instalaciones</h3>
-        <div class="cards">
-            <div class="card">
-                <img src="cuarto 1 cama.jpg" alt="Espacios Cómodos">
-                <h4>Espacios Cómodos</h4>
-                <p>Área amplia para descansar y convivir.</p>
-            </div>
-            <div class="card">
-                <img src="cuarto grande.jpg" alt="Accesibilidad">
-                <h4>Accesibilidad</h4>
-                <p>Ubicación céntrica y fácil de llegar.</p>
-            </div>
-            <div>
-                <img src="cuarto vista general.jpg" alt="Disponibilidad">
-                <h5>Disponibilidad</h5>
-                <p>Ambiente agradable</p>
-            </div>
+<section class="bienvenida">
+    <h2>Bienvenidos a Hotel Villa del Sol</h2>
+    <p>En Hotel Villa del Sol, nuestro objetivo es ofrecer una experiencia de descanso única, con atención cálida, instalaciones confortables y un ambiente familiar para todos nuestros visitantes. 🌞</p>
+</section>
+
+<section>
+    <h2>HOTEL VILLA DEL SOL</h2>
+    <p>Situados en San Pedro Sacatepéquez, San Marcos, te ofrecemos hospitalidad en un espacio cómodo para tu estancia.</p>
+    <ul>
+        <li>🏠 Habitaciones privadas</li>
+        <li>🚿 Baños privados</li>
+        <li>💧 Ducha con agua caliente</li>
+        <li>🛎️ Recepción 24h</li>
+        <li>📺 Señal de TV</li>
+    </ul>
+</section>
+
+<section class="instalaciones">
+    <h3>Nuestras Instalaciones</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="imagenes/Espacios .jpg" alt="Espacios Cómodos">
+            <h4>Espacios Cómodos</h4>
+            <p>Área amplia para descansar y convivir.</p>
         </div>
-    </section>
-
-    
-
-    <section>
-        <h3>Contáctanos</h3>
-        <form>
-            <label>Nombre:</label>
-            <input type="text" name="nombre">
-            <label>Email:</label>
-            <input type="email" name="email">
-            <label>Mensaje:</label>
-            <textarea name="mensaje" rows="4"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-
-    <section class="mapa">
-        <h2>Ubicación del Hotel</h2>
-        <div class="contenedor-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.381490216926!2d-91.78743972704298!3d14.97151366789239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e8129660d0407%3A0xda47e5c98b360124!2sHotel%20Villa%20Del%20Sol!5e0!3m2!1ses-419!2sgt!4v1745785781660!5m2!1ses-419!2sgt" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="card">
+            <img src="imagenes/calle.jpg" alt="Accesibilidad">
+            <h4>Accesibilidad</h4>
+            <p>Ubicación céntrica y fácil de llegar.</p>
         </div>
-    </section>
+        <div class="card">
+            <img src="imagenes/cuarto sencillo.jpg" alt="Disponibilidad">
+            <h4>Disponibilidad</h4>
+            <p>Ambiente agradable y relajante.</p>
+        </div>
+    </div>
+</section>
 
-    
-       
+<section>
+    <h3>Contáctanos</h3>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
 
-    <footer>
-        <p>© 2025 Hotel Villa del Sol - Todos los derechos reservados</p>
-    </footer>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-    </body>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section class="mapa">
+    <h2>Ubicación del Hotel</h2>
+    <div class="contenedor-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.381490216926!2d-91.78743972704298!3d14.97151366789239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e8129660d0407%3A0xda47e5c98b360124!2sHotel%20Villa%20Del%20Sol!5e0!3m2!1ses-419!2sgt!4v1745785781660!5m2!1ses-419!2sgt" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer class="tm-footer">
+    <div class="Nosotros">
+        <p class="bold">Acerca de Nosotros:</p>
+        <p>Formamos parte de un Hotel, hacemos de tu estancia cómoda y agradable con diversos servicios gratuitos y de valor añadido que te harán sentirte como en casa.</p>    
+    </div>
+
+    <div class="Contacto">
+        <p class="bold">Contacto:</p>
+        <p>Dirección: 3ra Avenida 2-25, San Pedro Sacatepéquez</p>
+        <p>Teléfono: 7760-8835</p>
+    </div>
+
+    <p>© 2025 Hotel Villa del Sol</p>
+</footer>
+
+</body>
 </html>

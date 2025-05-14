@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #f7c242;
+  }
+  
+  nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #f7c242;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #f7c242;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin: 30px auto;
+  }
+  
+  .historial-section {
+    padding: 40px 20px;
+  }
+  
+  .tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tabla-historial th,
+  .tabla-historial td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .tabla-historial thead {
+    background-color: #f7c242;
+    color: #000;
+  }
+  
+  .tabla-historial tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tabla-historial tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  footer {
+    background-color: #211f17;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 3px solid #f7c242;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
