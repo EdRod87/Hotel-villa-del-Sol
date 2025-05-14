@@ -1,25 +1,25 @@
-const sliderList = document.getElementById('sliderList');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
+const slider = document.getElementById('sliderList');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
 
 let index = 0;
-const totalSlides = sliderList.children.length;
+const totalSlides = slider.children.length;
 
-function updateSlider() {
-    sliderList.style.transform = `translateX(-${index * 100}%)`;
+function showSlide(i) {
+    slider.style.transform = `translateX(-${i * 100}%)`;
 }
 
-prevBtn.addEventListener('click', () => {
+prev.addEventListener('click', () => {
     index = (index - 1 + totalSlides) % totalSlides;
-    updateSlider();
+    showSlide(index);
 });
 
-nextBtn.addEventListener('click', () => {
+next.addEventListener('click', () => {
     index = (index + 1) % totalSlides;
-    updateSlider();
+    showSlide(index);
 });
 
 setInterval(() => {
     index = (index + 1) % totalSlides;
-    updateSlider();
+    showSlide(index);
 }, 5000);
