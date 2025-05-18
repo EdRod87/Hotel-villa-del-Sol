@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="log.css">
-
 </head>
 <body>
-    <section id="login" class="login">
-        <h6>Iniciar Sesión</h6>
-        
-        <form>
+    <section class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="irInicio(event)">
             <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario">
+            <input type="text" id="usuario" name="usuario" required>
 
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena">
+            <input type="password" id="contrasena" name="contrasena" required>
 
-            <button type="submit">Ingresar</button   href = "Inicio.html">
+            <button type="submit">Ingresar</button>
         </form>
     </section>
+
+    <script>
+        function irInicio(event) {
+            event.preventDefault(); // evita que se recargue la página
+            window.location.href = "Inicio.html";
+        }
+    </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hotel Villa del Sol</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css" />
     <script defer src="javas.js"></script>
 </head>
 <body>
@@ -22,16 +22,16 @@
     </nav>
 </header>
 
-<section class="slider-frame">
+<section class="slider-frame" aria-label="Galería de imágenes del hotel">
     <div class="slider">
         <ul id="sliderList">
-            <li><img src="imagenes/Entrada hotel.jpg" alt="Entrada del Hotel"></li>
-            <li><img src="imagenes/Entrada.jpg" alt="Entrada principal"></li>
-            <li><img src="imagenes/esquina.jpg" alt="Vista de la esquina"></li>
-            <li><img src="imagenes/vista.jpg" alt="Habitación"></li>
+            <li><img src="imagenes/Entrada hotel.jpg" alt="Entrada del Hotel" /></li>
+            <li><img src="imagenes/Entrada.jpg" alt="Entrada principal" /></li>
+            <li><img src="imagenes/esquina.jpg" alt="Vista de la esquina" /></li>
+            <li><img src="imagenes/vista.jpg" alt="Habitación" /></li>
         </ul>
-        <button id="prev" class="btn">&#10094;</button>
-        <button id="next" class="btn">&#10095;</button>
+        <button id="prev" class="btn" aria-label="Imagen anterior">&#10094;</button>
+        <button id="next" class="btn" aria-label="Imagen siguiente">&#10095;</button>
     </div>
 </section>
 
@@ -40,7 +40,7 @@
     <p>En Hotel Villa del Sol, nuestro objetivo es ofrecer una experiencia de descanso única, con atención cálida, instalaciones confortables y un ambiente familiar para todos nuestros visitantes. 🌞</p>
 </section>
 
-<section>
+<section class="info-hotel">
     <h2>HOTEL VILLA DEL SOL</h2>
     <p>Situados en San Pedro Sacatepéquez, San Marcos, te ofrecemos hospitalidad en un espacio cómodo para tu estancia.</p>
     <ul>
@@ -56,34 +56,34 @@
     <h3>Nuestras Instalaciones</h3>
     <div class="cards">
         <div class="card">
-            <img src="imagenes/Espacios .jpg" alt="Espacios Cómodos">
+            <img src="imagenes/Espacios .jpg" alt="Espacios Cómodos" />
             <h4>Espacios Cómodos</h4>
             <p>Área amplia para descansar y convivir.</p>
         </div>
         <div class="card">
-            <img src="imagenes/calle.jpg" alt="Accesibilidad">
+            <img src="imagenes/calle.jpg" alt="Accesibilidad" />
             <h4>Accesibilidad</h4>
             <p>Ubicación céntrica y fácil de llegar.</p>
         </div>
         <div class="card">
-            <img src="imagenes/cuarto sencillo.jpg" alt="Disponibilidad">
+            <img src="imagenes/cuarto sencillo.jpg" alt="Disponibilidad" />
             <h4>Disponibilidad</h4>
             <p>Ambiente agradable y relajante.</p>
         </div>
     </div>
 </section>
 
-<section>
+<section class="contacto">
     <h3>Contáctanos</h3>
-    <form>
+    <form id="contactForm">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required />
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
         <button type="submit">Enviar</button>
     </form>
@@ -92,16 +92,36 @@
 <section class="mapa">
     <h2>Ubicación del Hotel</h2>
     <div class="contenedor-mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.381490216926!2d-91.78743972704298!3d14.97151366789239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e8129660d0407%3A0xda47e5c98b360124!2sHotel%20Villa%20Del%20Sol!5e0!3m2!1ses-419!2sgt!4v1745785781660!5m2!1ses-419!2sgt" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.381490216926!2d-91.78743972704298!3d14.97151366789239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e8129660d0407%3A0xda47e5c98b360124!2sHotel%20Villa%20Del%20Sol!5e0!3m2!1ses-419!2sgt!4v1745785781660!5m2!1ses-419!2sgt"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
     </div>
 </section>
+
+<button id="goTopBtn" onclick="scrollToTop()" aria-label="Ir arriba">↑</button>
+
+<div class="menu-hamburguesa" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Abrir menú">
+    &#9776;
+</div>
+
+<nav id="menuLateral" class="menu-lateral" aria-label="Menú lateral">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
 
 <footer class="tm-footer">
     <div class="Nosotros">
         <p class="bold">Acerca de Nosotros:</p>
-        <p>Formamos parte de un Hotel, hacemos de tu estancia cómoda y agradable con diversos servicios gratuitos y de valor añadido que te harán sentirte como en casa.</p>    
+        <p>Formamos parte de un Hotel, hacemos de tu estancia cómoda y agradable con diversos servicios gratuitos y de valor añadido que te harán sentirte como en casa.</p>
     </div>
 
     <div class="Contacto">
